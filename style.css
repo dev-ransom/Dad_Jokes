@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    background: linear-gradient(to left bottom,  blueviolet, lightpink, blueviolet);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section .container{
+    background: rgba(255, 255, 255, 0.371);
+    text-align: center;
+    padding: 20px;
+    width: 87%;
+    border-radius: 10px;
+    box-shadow: 0 7px 15px rgb(0 0 0 / 0.2);
+}
+
+.container .header-test{
+    font-size: 35px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    color: blue;
+    text-shadow:  2px 5px 4px #000000a2;
+    word-spacing: 5px;
+    line-height: 2;
+    margin-bottom: 35px;
+}
+
+
+.jokes{
+    font-size: 22px;
+    word-spacing: 10px;
+    color: blue;
+    font-family: serif;
+}
