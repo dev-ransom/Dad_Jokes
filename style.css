@@ -20,7 +20,38 @@ section .container{
     width: 87%;
     border-radius: 10px;
     box-shadow: 0 7px 15px rgb(0 0 0 / 0.2);
+    position: relative;
 }
+
+.icons-container{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.icons-container li i{
+    font-size: 20px;
+    margin-top: 30px;
+    border: 2px solid rgb(0, 0, 255);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: blue;
+}
+
+.icons-container li i:hover{
+    background: hwb(254 0% 0% / 0.851);
+    transition: all 0.3s linear;
+    color: white;
+}
+
 
 .container .header-test{
     font-size: 35px;
@@ -31,6 +62,20 @@ section .container{
     word-spacing: 5px;
     line-height: 2;
     margin-bottom: 35px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header-test::before{
+    content: " ";
+    position: absolute;
+    height: 6px;
+    background: white;
+    bottom: -4px;
+    left: 510px;
+    width: 50px;
+    border-radius: 5px;
 }
 
 
@@ -54,10 +99,27 @@ button{
     cursor: pointer;
     border-radius: 5px;
     border-color: rgba(255, 255, 255, 0.281);
-    
 }
 
 .btn:hover{
     transition: all 0.3s ease;
     box-shadow: 0 4px 4px rgb(0 0 0 / 0.2);
+}
+
+.fa-bug{
+    font-size: 25px;
+    position: absolute;
+    top: 80px;
+    right: 450px;
+    margin: 20px 40px;
+    color: rgba(0, 0, 0, 0.496);
+    display: none;
+}
+
+
+@media screen and (max-width: 900px){
+    .header-test::before{
+        left: 230px;
+    }
+    
 }
